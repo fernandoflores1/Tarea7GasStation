@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gas Station Finder</title>
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <script type="module" src="./src/js/script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Gas Station Finder</h1>
+      <div class="filters">
+        <div class="filter-group">
+          <label for="province-select">Province</label>
+          <select name="province" id="province-select" required>
+            <option value="" selected disabled>Select a province</option>
+          </select>
+        </div>
+
+        <div class="filter-group">
+          <label for="municipality-select">Municipality</label>
+          <select
+            name="municipality"
+            id="municipality-select"
+            disabled
+            required
+          >
+            <option value="" selected disabled>Select a municipality</option>
+          </select>
+        </div>
+
+        <div class="filter-group">
+          <label for="fuel-select">Fuel Type</label>
+          <select name="fuel-type" id="fuel-select" required>
+            <option value="" selected disabled>Select a fuel type</option>
+          </select>
+        </div>
+
+        <div class="filter-group checkbox-group">
+          <input type="checkbox" id="openGas" />
+          <label for="openGas">Open Stations Only</label>
+        </div>
+      </div>
+
+      <div id="results-container"></div>
+    </div>
+  </body>
+</html>
